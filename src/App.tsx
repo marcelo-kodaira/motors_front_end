@@ -1,5 +1,12 @@
+import { useEffect } from "react";
+import { MainRoutes } from "./routes";
+
 function App() {
-  return <div>Hello World</div>;
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "auto" });
+  }, []);
+
+  return <MainRoutes />;
 }
 
 export default App;
